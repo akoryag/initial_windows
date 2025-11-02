@@ -33,7 +33,7 @@ Write-Host "Установка завершена."
 
 Write-Host "--------------------"
 Write-Host "Активация Uninstall Tool"
-Invoke-WebRequest -Uri "https://disk.yandex.ru/d/cD4xs8DVL_Hvpw" -OutFile msimg32.dll
+Invoke-WebRequest -Uri "https://disk.yandex.ru/d/9GDXbHHmproqYg" -OutFile msimg32.dll
 Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"Move-Item '$PSScriptRoot\msimg32.dll' '${env:ProgramFiles}\Uninstall Tool\' -force`""
 Write-Host "--------------------"
 
